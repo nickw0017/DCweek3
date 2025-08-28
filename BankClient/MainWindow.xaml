@@ -13,7 +13,7 @@
         <TextBox x:Name="PinBox" HorizontalAlignment="Center" Height="18" Margin="0,146,0,0" TextWrapping="Wrap" Text="Pin" VerticalAlignment="Top" Width="218"/>
         <TextBox x:Name="BalanceBox" HorizontalAlignment="Center" Height="18" Margin="0,169,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top" Width="218"/>
         <TextBox x:Name="Index" HorizontalAlignment="Left" Height="19" Margin="187,255,0,0" TextWrapping="Wrap" Text="Index" VerticalAlignment="Top" Width="71"/>
-        <Button x:Name="Go" Content="Go" HorizontalAlignment="Left" Height="29" Margin="444,255,0,0" VerticalAlignment="Top" Width="82"/>
+        <Button x:Name="GoButton" Content="Go" HorizontalAlignment="Left" Height="29" Margin="444,255,0,0" VerticalAlignment="Top" Width="82" Click="GoButton_Click"/>
         <TextBox x:Name="TotalItemsBox" HorizontalAlignment="Left" Height="16" Margin="187,294,0,0" TextWrapping="Wrap" Text="Total Items" VerticalAlignment="Top" Width="71" TextChanged="TextBox_TextChanged"/>
 
     </Grid>

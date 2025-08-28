@@ -14,9 +14,12 @@ namespace BankServer
             Console.Title = "Bank Data Server";
             Console.WriteLine("Starting server...");
 
-            var tcp = new NetTcpBinding();
+            var tcp = new NetTcpBinding()
+            {
+                Security = { Mode = SecurityMode.None }
+            };
 
-            using (ServiceHost host = new ServiceHost(typeof(DataServer)))
+            using (var host = new ServiceHost(typeof(DataServer)))
             {
                 host.AddServiceEndpoint(typeof(DataServerInterface), tcp,
                     "net.tcp://0.0.0.0:8100/DataService");
