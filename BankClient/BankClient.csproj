@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2DADECA-9F10-492D-A8FF-AEF8C0937A9F}</ProjectGuid>
+    <ProjectGuid>{3B559D6E-3733-8FD8-BE84-F65BCBD0DC0D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WpfClient</RootNamespace>
     <AssemblyName>WpfClient</AssemblyName>
@@ -96,13 +96,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
-      <Project>{c0fa4fa4-b2a3-4d18-a0fb-eb38f4418233}</Project>
-      <Name>ClassLibrary1</Name>
+    <ProjectReference Include="..\BankServer\BankServer.csproj">
+      <Project>{9d2724e3-67a9-6622-001c-feaaaf1092f7}</Project>
+      <Name>BankServer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ConsoleApp2\ConsoleApp2.csproj">
-      <Project>{c410791a-32a9-4fa1-a37b-ec73ff43e7f7}</Project>
-      <Name>ConsoleApp2</Name>
+    <ProjectReference Include="..\SharedContracts\SharedContracts.csproj">
+      <Project>{1f178fdd-0038-4138-b0e9-d0ba00568f0d}</Project>
+      <Name>SharedContracts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

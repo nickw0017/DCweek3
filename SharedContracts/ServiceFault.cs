@@ -11,7 +11,7 @@ namespace SharedContracts
     public class ServiceFault
     {
         [DataMember] public string Code { get; set; }
-        [DataMember] pbulic string Message { get; set; }
+        [DataMember] public string Message { get; set; }
 
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
 
-namespace ConsoleApp2
+namespace BankServer
 {
     [ServiceContract]
     public interface DataServerInterface

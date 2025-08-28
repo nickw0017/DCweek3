@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
-using ClassLibrary1;
+using BankDatabase;
 
-namespace ConsoleApp2
+namespace BankServer
 {
     [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple, UseSynchronizationContext = false)]
     internal class DataServer : DataServerInterface

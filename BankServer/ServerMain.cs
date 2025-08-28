@@ -5,7 +5,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace BankServer
 {
     internal static class Class1
     {

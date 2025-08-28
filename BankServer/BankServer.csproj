@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C410791A-32A9-4FA1-A37B-EC73FF43E7F7}</ProjectGuid>
+    <ProjectGuid>{9D2724E3-67A9-6622-001C-FEAAAF1092F7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleApp2</RootNamespace>
     <AssemblyName>ConsoleApp2</AssemblyName>
@@ -45,18 +45,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="DataServerInterface.cs" />
     <Compile Include="DataServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
-      <Project>{c0fa4fa4-b2a3-4d18-a0fb-eb38f4418233}</Project>
-      <Name>ClassLibrary1</Name>
+    <ProjectReference Include="..\BankDatabase\BankDatabase.csproj">
+      <Project>{1e3a80f9-f110-f962-5a68-975d49f9db81}</Project>
+      <Name>BankDatabase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedContracts\SharedContracts.csproj">
+      <Project>{1f178fdd-0038-4138-b0e9-d0ba00568f0d}</Project>
+      <Name>SharedContracts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

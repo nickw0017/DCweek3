@@ -13,8 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ServiceModel;
-using ConsoleApp2;
-using ClassLibrary1;
+using BankServer;
 
 namespace WpfClient
 {
@@ -27,7 +26,7 @@ namespace WpfClient
 
 
 
-            ChannelFactory<ConsoleApp2.DataServerInterface> foobFactory;
+            ChannelFactory<BankServer.DataServerInterface> foobFactory;
             NetTcpBinding tcp = new NetTcpBinding();
             //Set the URL and create the connection!
 
