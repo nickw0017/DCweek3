@@ -1,3 +1,29 @@
 .vs/
 **/.vs/
 
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+
+# Test results
+TestResults/
+
+# NuGet (classic packages.config layout)
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+*.nupkg
+
+# Editors (optional)
+.vscode/
+.idea/
+
